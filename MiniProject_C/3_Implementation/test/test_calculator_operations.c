@@ -10,6 +10,7 @@ void test_add(void);
 void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
+void test_module(void);
 
 /* Start of the application test */
 int main() {
@@ -26,7 +27,7 @@ int main() {
   CU_add_test(suite, "subtract", test_subtract);
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
-
+  CU_add_test(suite, "module", test_module);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -68,5 +69,12 @@ void test_divide(void) {
   
   /* Dummy fail*/
   CU_ASSERT(3 == divide(2, 2));
+}
+
+void test_module(void) {
+  CU_ASSERT(0 == module(2, 2));
+  
+  /* Dummy fail*/
+  CU_ASSERT(3 == module(3, 2));
 }
 
