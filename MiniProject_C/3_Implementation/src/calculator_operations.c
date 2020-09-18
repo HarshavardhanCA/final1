@@ -22,3 +22,7 @@ int divide(int operand1, int operand2)
     else
         return operand1 / operand2;
 }
+int module(int operand1, int operand2)
+{
+    return operand1 % operand2;
+}
