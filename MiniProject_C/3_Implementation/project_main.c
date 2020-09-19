@@ -105,7 +105,7 @@ void calculator_menu(void)
             getchar();
             break;
         case AND:
-            printf("\n %d && %d = %d\nEnter to continue", 
+            printf("\n %d & %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             and(calculator_operand1, calculator_operand2));
@@ -114,7 +114,7 @@ void calculator_menu(void)
             getchar();
             break;
         case OR:
-            printf("\n %d || %d = %d\nEnter to continue", 
+            printf("\n %d | %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             or(calculator_operand1, calculator_operand2));
@@ -123,7 +123,7 @@ void calculator_menu(void)
             getchar();
             break;
         case NAND:
-            printf("\n !(%d && %d) = %d\nEnter to continue", 
+            printf("\n !(%d & %d) = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             nand(calculator_operand1, calculator_operand2));
@@ -132,7 +132,7 @@ void calculator_menu(void)
             getchar();
             break;
         case NOR:
-            printf("\n !(%d || %d) = %d\nEnter to continue", 
+            printf("\n !(%d | %d) = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             nor(calculator_operand1, calculator_operand2));
