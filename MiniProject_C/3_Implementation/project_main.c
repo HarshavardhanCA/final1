@@ -1,23 +1,12 @@
 #include <calculator_operations.h>
-
-/* Status of the operation requested */
-#define VALID   (1)
+#define VALID   (1) /* Status of the operation requested */
 #define INVALID (0)
-
-/* Calculator operation requested by user*/
-unsigned int calculator_operation = 0;
-
-/* Operands on which calculation is performed */
-int calculator_operand1 = 0;
+unsigned int calculator_operation = 0; /* Calculator operation requested by user*/
+int calculator_operand1 = 0; /* Operands on which calculation is performed */
 int calculator_operand2 = 0;
-
-/* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULE, EXIT };
-
-/* Display the menu of operations supported */
-void calculator_menu(void);
-/* Verifies the requested operations validity */
-int valid_operation(int operation);
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULE, EXIT }; /* Valid operations */
+void calculator_menu(void); /* Display the menu of operations supported */
+int valid_operation(int operation); /* Verifies the requested operations validity */
 
 
 /* Start of the application */
